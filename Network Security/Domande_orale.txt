@@ -1,0 +1,56 @@
+Domande:
+
+- (spesso) come funziona 802.1x (piu' approfondito delle slides) + 802.11i 
+- RIP e OSPF 
+- DiffieHellman 
+- Aree iso/osi in relazione con SMNP 
+- ChopChop attack 
+- Firewall (descrizione completa della immagine alle sue spalle) 
+- NAT qualche volta 
+- MPLS mai chiesto 
+- RSA qualche volta
+
+Interrogazione Stefano col Pecorella
+-  dilfi hellman
+- radice primitiva ("minore di p meno uno!") 
+- come se li sono scambiati p e alfa? Sono numeri che devo mantenere sempre segreti? Se vedo passare y_a o y_b posso ricavare k_a o k_b? 
+- cosa si puo' usare al posto di questo protocollo? cosa c'e' in comune tra dilfi e tutti gli altri protocolli di scambio chiavi? cosa è il log discreto per il sistema? (è la funzione trappola) anche la curva ellittica è una funzione trappola.
+//
+NAT. quali sono i tipi, ma parliamo di quale si usa davvero. comportamento con UDP. in base a come decide il filter, cosa puo' accadere di brutto? come si risolvono i problemi col NAT? quale è il problema piu' grosso del NAT? (ipsec) come si risolve ipsec? 
+quali sono i due metodi per far passare ipsec dal nat senza rompersi i coglioni? (1 ip over ip, 2 togliere il NAT)
+
+
+Aree iso osi 
+
+Domanda secca: differenza di snp tra le versioni v1 v2 e v3. 
+
+Aree ISO osi
+Attacchi WiFi
+Snmp
+Routing dinamico
+Wpa home
+Management vari
+Agent manager
+Mib
+Header IP, Mac, WiFi
+Diffie helman
+Certificati, ca
+routing anche statico
+
+---------
+
+Chip chop
+Diffie helman
+Funzioni trappola
+Versioni rip
+Netfilter
+
+-------
+
+snmp
+ridondanza nei Firewall
+aree iso osi
+nms
+dns poisoning
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      nav {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #007BFF;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #0056b3;
+      }
+
+      .content {
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .content ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .content ul li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .content p {
+        font-size: 1.1rem;
+        color: #555;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Home Page</h1>
+    </header>
+
+    <nav>
+      <a href="{{url_for('index')}}">Go to Index</a>
+      <a href="{{url_for('home')}}">Go to Home</a>
+      <a href="{{url_for('list')}}">Go to List</a>
+    </nav>
+
+    <div class="content">
+      <p>Explore the space of possibilities</p>
+      <ul>
+        <li>Return of the Space Cowboy</li>
+        <li>Interplanetary Good Vibe Zone</li>
+      </ul>
+      <p id="testjs">Before JS</p>
+    </div>
+
+    <script src="{{url_for('static', filename='home.js')}}"></script>
+  </body>
+</html>

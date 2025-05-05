@@ -1,0 +1,54 @@
+
+%%========================= Domande Security & Network Management =========================%%
+
+- EAF
+- Risk Analysis x2
+- Risk Assessment x3
+- Classificazione delle Vulnerabilità . Come si trovano i diversi tipi?
+- Vulnerability Assestment. Cos'è un Asset?
+- Attacchi link-local e on-path. Quanto vicino è link-local? Che tipologia di attacco posso usare su link-local?
+
+
+- Proprietà  Funzione di hash x4
+- Diffie-Hellman. Come si puo' bucare?
+- Web Of Thrust
+- Certificati e Certificate Revocation List. Chi certifica gli Enti Certificatori? x3
+- Curve Ellittiche. Perchè dovremo usarle? x2
+
+
+- Cos'è un firewall? Cosa succede se si rompe?
+- Iptables
+- Ridondanza firewall (backup cold/hot swap) x3
+
+
+- Spiegazione del NAT e le sue caratteristiche
+
+
+- MITM. Descrizione e possibili attacchi ai vari protocolli x2
+- SQL injection. Che tipo di attacco è? Come ci si protegge?
+- ARP Spoofing x3
+- DNS Spoofing. Come ci si difende? x2
+
+
+- Attacchi a WEP
+- ChopChop Attack x2
+- 802.1X. Spiegazione e possibili . Si può attaccare? x2
+- WPA2-PSK. Assomiglia al Diffie Helmann? Posso ricavare la PSK con criptoanalisi? Come mi difendo?
+
+
+- IDS. spiegazione formale, differenze x2
+- Cos'è e come si fa il Penetration Testing?
+- Black Box Testing
+
+
+- Network management system in generale
+- Versioni di SNMP
+- Aree ISO/OSI x2
+- Esempi NMS software e hardware
+
+
+
+
+
+
+

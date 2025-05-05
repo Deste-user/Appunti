@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+      /* General Styling */
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      /* Header Styling */
+      header {
+        background-color: #007BFF;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+
+      /* Navigation Styling */
+      nav {
+        text-align: center;
+        margin-top: 10px;
+        background-color: #333;
+        padding: 10px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #FFD700;
+      }
+
+      /* Main Content Styling */
+      .content {
+        padding: 30px;
+        text-align: center;
+      }
+
+      /* Table Styling */
+      table {
+        width: 80%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        font-size: 1.1rem;
+      }
+
+      table th, table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+
+      table th {
+        background-color: #007BFF;
+        color: white;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      /* Footer Styling */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Search Results</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+      <a href="{{ url_for('entry') }}">Go to Login</a> |
+      <a href="{{ url_for('home') }}">Go to home page</a> |
+      <a href="{{ url_for('list') }}">Go to list page</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="content">
+      <h2>Search Results</h2>
+
+      <h3>Matching Both</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Other Data</th>  <!-- Adjust column headers as per your table structure -->
+          </tr>
+        </thead>
+        <tbody>
+          {% for worker in both %}
+            <tr>
+              {% for elt in worker %}
+                <td>{{ elt }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <h3>Matching Either</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Other Data</th>  <!-- Adjust column headers as per your table structure -->
+          </tr>
+        </thead>
+        <tbody>
+          {% for worker in either %}
+            <tr>
+              {% for elt in worker %}
+                <td>{{ elt }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+</html>
